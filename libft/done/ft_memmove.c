@@ -3,11 +3,6 @@
 
 void *ft_memmove(void *dest, void *src, size_t n)
 {
-    if (dest == NULL || src == NULL)
-    {
-        return;
-    }
-
     unsigned char *d;
     unsigned char *s;
     // const unsigned char *s;
