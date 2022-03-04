@@ -5,7 +5,7 @@ void *ft_memset(void *s, int c, size_t n)
 	unsigned char *tmp_pointer;
 
 	tmp_pointer = s;
-	while (n-- > 0)
+	while (n--)
 	{
 		*tmp_pointer++ = c;
 	}

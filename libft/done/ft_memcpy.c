@@ -8,7 +8,7 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     temp_dist = dest;
     temp_src = src;
 
-    while (n-- > 0)
+    while (n--)
     {
         *temp_dist++ = *temp_src++;
     }
