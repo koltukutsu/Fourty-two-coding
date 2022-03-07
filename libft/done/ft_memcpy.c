@@ -12,4 +12,5 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     {
         *temp_dist++ = *temp_src++;
     }
+    return dest;
 }

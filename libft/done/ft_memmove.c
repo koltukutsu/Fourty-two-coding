@@ -26,14 +26,3 @@ void *ft_memmove(void *dest, void *src, size_t n)
         }
     }
 }
-
-// int main()
-// {
-//     char list[] = "first things first";
-//     size_t n = ft_strlen(list);
-
-//     ft_memmove(list, "mehmet semih babacan bu gun nasillar acaba", n);
-//     int i = 0;
-//     for (i = 0; i < n; i++)
-//         printf("%c", list[i]);
-// }
