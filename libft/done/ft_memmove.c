@@ -25,4 +25,5 @@ void *ft_memmove(void *dest, void *src, size_t n)
             *lastd-- = *lasts--;
         }
     }
+    return (dest);
 }
