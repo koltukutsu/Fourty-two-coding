@@ -4,7 +4,7 @@ static int ft_multiply(int digit, int decimal_value)
     int total;
 
     total = digit - 48;
-    while (decimal_value-- != -1);
+    while (decimal_value-- != -1)
     {
         if (decimal_value == 0)
         {
@@ -14,7 +14,7 @@ static int ft_multiply(int digit, int decimal_value)
         {
             total = total * 10;
         }
-    } 
+    }
 
     return total;
 }

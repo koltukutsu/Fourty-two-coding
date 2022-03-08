@@ -1,0 +1,26 @@
+Already up to date.
+[33mIf all your tests are OK and the moulinette KO you, please run the tester with valgrind (see README)
+[36mmake -C /home/semih/Documents/Work_Space/Fourty-two-coding/libft/done/
+make[1]: Entering directory '/home/semih/Documents/Work_Space/Fourty-two-coding/libft/done'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/semih/Documents/Work_Space/Fourty-two-coding/libft/done'
+[34m[Mandatory]
+[37mft_memset	: [32m1.OK [32m2.OK 
+[37mft_bzero	: [32m1.OK [32m2.OK [32m3.OK 
+[37mft_memcpy	: [32m1.OK [32m2.OK 
+[37mft_memmove	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_memchr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [31m5.KO 
+[37mft_memcmp	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[37mft_strlen	: [32m1.OK [32m2.OK 
+[37mft_isalpha	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK 
+[37mft_isdigit	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_isalnum	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK 
+[37mft_isascii	: [32m1.OK [32m2.OK [31m3.KO [32m4.OK 
+[37mft_isprint	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_toupper	: [31m1.KO [32m2.OK [31m3.KO [32m4.OK 
+[37mft_tolower	: [31m1.KO [32m2.OK [31m3.KO [32m4.OK 
+[37mft_strchr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [31m5.KO 
+[37mft_strrchr	: [93m1.SIGSEGV[0m
+[37mft_strncmp	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK [32m13.OK [32m14.OK [32m15.OK [32m16.OK 
+[37mft_strlcpy	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK 
+[37mft_strlcat	: [32m1.OK [32m2.OK [32m3.OK [31m4.KO [31m5.KO [31m6.KO [31m7.KO [32m8.OK [32m9.OK [31m10.KO [31m11.KO [32m12.OK [31m13.KO [31m14.KO [31m15.KO [31m16.KO [32m17.OK 

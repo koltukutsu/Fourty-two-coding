@@ -1,16 +1,14 @@
 #include "libft.h"
 
-char *strnstr(const char *big, const char *little, size_t len)
+char *ft_strnstr(const char *big, const char *little, size_t len)
 {
     if (ft_strlen(little) == 0)
     {
-        return (big);
+        return ((char *)big);
     }
 
     const char *last_occurence;
     const char *ptr_big;
-    const char *ptr_big_inside;
-    const char *ptr_little;
     size_t little_size;
     int flag;
 
@@ -20,7 +18,6 @@ char *strnstr(const char *big, const char *little, size_t len)
 
     while (*ptr_big != '\0' && len--)
     {
-        ptr_big_inside = ptr_big;
 
         if (ft_strncmp(ptr_big, little, little_size) == 0)
         {
