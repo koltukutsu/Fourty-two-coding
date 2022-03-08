@@ -6,6 +6,7 @@
 // TODO: void pointer funcitons must return some kind of pointers
 // length of the array must be size_t, pay attention to that detail
 // control that while I was changing the pointers, its important to not change the original pointer addresses
+char *strnstr(const char *big, const char *little, size_t len); // there might be a problem with the function
 char *ft_strrchr(const char *s, int c);
 char *ft_strchr(const char *s, int c);
 char *strchr(const char *s, int c);
@@ -29,6 +30,8 @@ int ft_toupper(int c);
 int ft_tolower(int c);
 int ft_isprint(int c);
 
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t strlcpy(char *dst, char *src, size_t dstsize);
 size_t ft_strlen(const char *arr);
 
 #endif

@@ -7,11 +7,35 @@ char *strnstr(const char *big, const char *little, size_t len)
         return (big);
     }
 
-    char c;
-    char sc;
+    const char *last_occurence;
+    const char *ptr_big;
+    const char *ptr_big_inside;
+    const char *ptr_little;
+    size_t little_size;
+    int flag;
 
-    while (len--)
+    little_size = ft_strlen(little);
+    ptr_big = big;
+    flag = 0;
+
+    while (*ptr_big != '\0' && len--)
     {
-        if(*ptr_big++ ==
+        ptr_big_inside = ptr_big;
+
+        if (ft_strncmp(ptr_big, little, little_size) == 0)
+        {
+            last_occurence = ptr_big;
+            flag = 1;
+        }
+        ptr_big++;
+    }
+
+    if (flag)
+    {
+        return (char *)last_occurence;
+    }
+    else
+    {
+        return NULL;
     }
 }
