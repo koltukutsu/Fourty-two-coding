@@ -4,7 +4,7 @@ static int ft_multiply(int digit, int decimal_value)
     int total;
 
     total = digit - 48;
-    while (decimal_value-- != -1)
+    while (decimal_value != -1)
     {
         if (decimal_value == 0)
         {
@@ -14,8 +14,8 @@ static int ft_multiply(int digit, int decimal_value)
         {
             total = total * 10;
         }
+        decimal_value--;
     }
-
     return total;
 }
 
@@ -24,24 +24,40 @@ int ft_atoi(const char *nptr)
     int total_value;
     int i;
     int decimal;
+    int flag;
 
     i = 0;
     decimal = 0;
+    total_value = 0;
+    flag = 0;
     while (nptr[i])
         i++;
     i--;
     while (i != -1)
     {
-        if (ft_isdigit(nptr[i]))
+        if (flag)
         {
-            total_value += ft_multiply(nptr[i], decimal);
+            return (0);
+        }
+        if (nptr[i] == '-' && i == 0)
+        {
+            total_value *= -1;
+            flag = 1;
+        }
+        else if (nptr[i] == '+')
+        {
+            flag = 1;
+        }
+        else if (nptr[i] == ' ')
+        {
+        }
+
+        else if (ft_isdigit(nptr[i]))
+        {
+            total_value = total_value + ft_multiply(nptr[i], decimal);
             decimal++;
-            i--;
         }
-        else
-        {
-            break;
-        }
+        i--;
     }
-    return total_value;
+    return (int)total_value;
 }
