@@ -1,25 +1,15 @@
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char *ft_strrchr(const char *cp, int ch)
 {
-    const char *s_last;
-    int flag;
+    char *save;
+    char c;
 
-    flag = 0;
-    for (;; ++s)
+    for (save = (char *)0; (c = *cp); cp++)
     {
-        if (*s == c)
-        {
-            flag = (flag == 0) ? 1 : flag;
-            s_last = s;
-        }
+        if (c == ch)
+            save = (char *)cp;
     }
-    if (flag)
-    {
-        return ((char *)s_last);
-    }
-    else
-    {
-        return (NULL);
-    }
+
+    return save;
 }
